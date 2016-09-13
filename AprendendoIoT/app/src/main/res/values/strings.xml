@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Aprendendo IoT</string>
+    <string name="modulo1">Introdução</string>
+    <string name="modulo2">Arduino</string>
+    <string name="modulo3">Raspberry PI</string>
+    <string name="modulo4">Shields</string>
+
 </resources>
