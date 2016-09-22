@@ -12,13 +12,55 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Módulos"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
 
-        <ImageView
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/circle_verde"
-            android:gravity="center"
-            android:layout_marginTop="@dimen/margin_top"/>
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/circle_amarelo"
+                android:gravity="center"
+                android:onClick="m1"
+                android:layout_marginTop="@dimen/margin_top"/>
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="7dp"
+                android:adjustViewBounds="true"
+                android:rotation="45"
+                android:src="@drawable/ic_flight_black_24dp"/>
+            <ImageView
+                android:id="@+id/m1inact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/circle_cinza"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                android:onClick="block"
+                android:layout_marginTop="@dimen/tituloModulo"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/circle_cinza"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/tituloModulo"/>
+
+        </FrameLayout>
+
 
         <TextView
             android:layout_width="match_parent"
@@ -35,19 +77,69 @@
                 android:orientation="horizontal"
                 android:layout_gravity="center">
 
-                <ImageView
+                <FrameLayout
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:src="@drawable/circle_azul"
-                    android:layout_marginTop="@dimen/margin_top"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/circle_amarelo"
+                        android:gravity="center"
+                        android:onClick="m1"
+                        android:layout_marginTop="@dimen/margin_top"/>
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="95dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="45dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_arduino"/>
+                    <ImageView
+                        android:id="@+id/m2inact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/circle_cinza"
+                        android:layout_gravity="center"
+                        android:visibility="invisible"
+                        android:onClick="block"
+                        android:layout_marginTop="@dimen/tituloModulo"/>
 
-                <ImageView
+                </FrameLayout>
+                <FrameLayout
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:src="@drawable/circle_vermelho"
-                    android:layout_marginTop="@dimen/margin_top"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/circle_amarelo"
+                        android:gravity="center"
+                        android:onClick="m1"
+                        android:layout_marginTop="@dimen/margin_top"/>
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginLeft="4dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_raspberry"/>
+                    <ImageView
+                        android:id="@+id/m3inact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/circle_cinza"
+                        android:layout_gravity="center"
+                        android:visibility="invisible"
+                        android:onClick="block"
+                        android:layout_marginTop="@dimen/tituloModulo"/>
+
+                </FrameLayout>
+
 
             </LinearLayout>
 
@@ -79,11 +171,159 @@
 
             </LinearLayout>
 
-        <ImageView
+
+
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/circle_cinza"
-            android:layout_marginTop="@dimen/tituloModulo"/>
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/circle_amarelo"
+                android:gravity="center"
+                android:onClick="m1"
+                android:layout_marginTop="@dimen/margin_top"/>
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="6dp"
+                android:adjustViewBounds="true"
+                android:rotation="90"
+                android:src="@drawable/ic_flight_black_24dp"/>
+            <ImageView
+                android:id="@+id/m4inact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/circle_cinza"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                android:onClick="block"
+                android:layout_marginTop="@dimen/tituloModulo"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/circle_cinza"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/tituloModulo"/>
+
+        </FrameLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/modulo4"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/tituloModulo"
+            android:layout_marginTop="@dimen/margin_tittle"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/circle_amarelo"
+                    android:gravity="center"
+                    android:onClick="m1"
+                    android:layout_marginTop="@dimen/margin_top"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="95dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="45dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_arduino"/>
+                <ImageView
+                    android:id="@+id/m5inact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/circle_cinza"
+                    android:layout_gravity="center"
+                    android:visibility="visible"
+                    android:onClick="block"
+                    android:layout_marginTop="@dimen/tituloModulo"/>
+
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/circle_amarelo"
+                    android:gravity="center"
+                    android:onClick="m1"
+                    android:layout_marginTop="@dimen/margin_top"/>
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="4dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_raspberry"/>
+                <ImageView
+                    android:id="@+id/m6inact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/circle_cinza"
+                    android:layout_gravity="center"
+                    android:visibility="visible"
+                    android:onClick="block"
+                    android:layout_marginTop="@dimen/tituloModulo"/>
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/modulo2"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="@dimen/tituloModulo"
+                android:layout_marginTop="@dimen/margin_tittle"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="@dimen/tituloModulo"
+                android:text="@string/modulo3"
+                android:layout_marginTop="@dimen/margin_tittle"/>
+
+        </LinearLayout>
+
 
     </LinearLayout>
 

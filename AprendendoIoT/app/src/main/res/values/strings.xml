@@ -4,5 +4,7 @@
     <string name="modulo2">Arduino</string>
     <string name="modulo3">Raspberry PI</string>
     <string name="modulo4">Shields</string>
+    <string name="topico1">Tópico 1</string>
+    <string name="topico2">Tópico 2</string>
 
 </resources>

@@ -15,7 +15,7 @@
         <ImageView
             android:layout_width="56dp"
             android:layout_height="56dp"
-            android:src="@mipmap/ic_school_black_24dp"
+            android:src="@drawable/ic_school_black_24dp"
             android:scaleType="fitXY"
             android:layout_marginTop="50dp"
             android:layout_marginLeft="30dp"
@@ -32,10 +32,9 @@
 
     </LinearLayout>
 
-
-
     <EditText
     android:layout_width="wrap_content"
+        android:id="@+id/btnemail"
     android:layout_height="wrap_content"
     android:ems="15"
     android:text="E-mail"
@@ -43,6 +42,7 @@
     android:layout_gravity="center" />
 
     <EditText
+        android:id="@+id/btnsenha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="15"
@@ -55,6 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Entrar"
+        android:onClick="logando"
         android:layout_marginTop="@dimen/margin_top"
         android:ems="10"/>
 
