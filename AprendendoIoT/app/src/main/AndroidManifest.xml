@@ -20,4 +20,6 @@
         <activity android:name=".Topicos"></activity>
     </application>
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
 </manifest>

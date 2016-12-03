@@ -34,7 +34,7 @@
 
     <EditText
     android:layout_width="wrap_content"
-        android:id="@+id/btnemail"
+    android:id="@+id/email"
     android:layout_height="wrap_content"
     android:ems="15"
     android:text="E-mail"
@@ -42,7 +42,7 @@
     android:layout_gravity="center" />
 
     <EditText
-        android:id="@+id/btnsenha"
+        android:id="@+id/senha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="15"
